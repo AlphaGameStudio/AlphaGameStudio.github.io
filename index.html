@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Game Studio</title>
+    <style>
+        /* === Global Styles === */
+        :root {
+            --bg-color: #0d0e12;
+            --card-bg: #1a1c23;
+            --text-color: #ffffff;
+            --accent: #ff4757;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+        }
+
+        /* === Header / Studio Info === */
+        .studio-header {
+            text-align: center;
+            padding: 70px 20px 30px;
+            background: radial-gradient(circle at top, #262a35 0%, #0d0e12 70%);
+        }
+
+        .studio-icon {
+            width: 150px; 
+            height: 150px;
+            border-radius: 35px;
+            object-fit: contain; 
+            border: 3px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+            margin-bottom: 15px;
+            background-color: transparent;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .studio-icon:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 40px rgba(255, 71, 87, 0.3);
+        }
+
+        .studio-title {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            
+            /* Juicy Animated Gradient Setup */
+            background: linear-gradient(90deg, #ffffff 0%, #ff4757 33%, #ff7eb3 66%, #ffffff 100%);
+            background-size: 300% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            /* The Flow Animation */
+            animation: juiceFlow 4s linear infinite;
+            filter: drop-shadow(0 4px 10px rgba(255, 71, 87, 0.3));
+        }
+
+        @keyframes juiceFlow {
+            0% { background-position: 0% center; }
+            100% { background-position: 300% center; }
+        }
+
+        /* === Games Grid Layout === */
+        .games-portfolio {
+            padding: 30px 5%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 25px; 
+        }
+
+        /* === Individual Game Card === */
+        .game-card {
+            background-color: var(--card-bg);
+            border-radius: 25px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            
+            /* Flex layout strictly stacking from top to bottom */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            min-height: 380px; 
+            gap: 20px; /* Consistent gap between title and buttons */
+        }
+
+        /* === Hover Effect on the Whole Card === */
+        .game-card:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+            background-color: #21242d;
+            transform: translateY(-8px); 
+        }
+
+        .game-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* Removed flex: 1 so it doesn't push buttons to the bottom */
+        }
+
+        .game-icon {
+            width: 130px; 
+            height: 130px;
+            border-radius: 30px;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+            margin-bottom: 15px;
+        }
+
+        .game-title {
+            font-size: 1.3rem; 
+            margin: 0;
+            font-weight: 700;
+        }
+
+        /* --- Universal Custom Buttons Style --- */
+        .download-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px; 
+            width: 100%;
+            max-width: 220px; 
+            margin: 0 auto;
+        }
+
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 6px 12px; 
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-align: left; 
+            flex-shrink: 0; 
+        }
+
+        .download-btn:active {
+            transform: scale(0.96); 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .download-btn img {
+            width: 24px; 
+            height: auto; 
+            object-fit: contain;
+        }
+
+        /* Button Text Layout */
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .small-text {
+            font-size: 0.55rem; 
+            font-weight: 600;
+            opacity: 0.8;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .large-text {
+            font-size: 0.95rem; 
+            font-weight: 700;
+        }
+
+        /* Specific Store Colors */
+        
+        /* Play Store & Apple (Black Buttons) */
+        .download-btn.play, .download-btn.apple { 
+            background-color: #111; 
+            border: 1px solid #333; 
+            color: #ffffff;
+        }
+        .download-btn.play:hover, .download-btn.apple:hover { 
+            background-color: #222; 
+        }
+
+        /* Amazon (White Button) */
+        .download-btn.amazon { 
+            background-color: #ffffff; 
+            border: 1px solid #d5d5d5; 
+            color: #111111; 
+        }
+        .download-btn.amazon:hover { 
+            background-color: #f2f2f2; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="studio-header">
+        <img src="studioicon.png" alt="Alpha Game Studio Icon" class="studio-icon">
+        <h1 class="studio-title">Alpha Game Studio</h1>
+    </header>
+
+    <main class="games-portfolio">
+        <div class="games-grid">
+
+            <div class="game-card">
+                <div class="game-content">
+                    <img src="rushcooking.png" alt="Rush Cooking" class="game-icon">
+                    <h2 class="game-title">Rush Cooking: Chef Madness</h2>
+                </div>
+                
+                <div class="download-buttons">
+                    <a class="download-btn apple" href="#">
+                        <img src="appleIcon.png" alt="App Store Logo">
+                        <div class="btn-text">
+                            <span class="small-text">Download on the</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                    <a class="download-btn play" href="https://play.google.com/store/apps/details?id=com.CookingUtopia.Canteen.Kitchen.MadnessChef.Craze.Fever">
+                        <img src="playstoreIcon.png" alt="Google Play Logo">
+                        <div class="btn-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="large-text">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-content">
+                    <img src="hiddenObject.png" alt="Hidden Object" class="game-icon">
+                    <h2 class="game-title">Hidden Object: Find It Game</h2>
+                </div>
+                
+                <div class="download-buttons">
+                    <a class="download-btn apple" href="#">
+                        <img src="appleIcon.png" alt="App Store Logo">
+                        <div class="btn-text">
+                            <span class="small-text">Download on the</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                    <a class="download-btn play" href="#">
+                        <img src="playstoreIcon.png" alt="Google Play Logo">
+                        <div class="btn-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="large-text">Google Play</span>
+                        </div>
+                    </a>
+                    <a class="download-btn amazon" href="https://www.amazon.com/gp/mas/dl/android?p=com.cookingutopia.foodgame.adventure">
+                        <img src="amazonIcon.png" alt="Amazon Logo">
+                        <div class="btn-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="large-text">Amazon Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div class="game-card">
+                <div class="game-content">
+                    <img src="hiddenObject.png" alt="Hidden Object" class="game-icon">
+                    <h2 class="game-title">Hidden Object: Find It Game</h2>
+                </div>
+                
+                <div class="download-buttons">
+                    <a class="download-btn apple" href="#">
+                        <img src="appleIcon.png" alt="App Store Logo">
+                        <div class="btn-text">
+                            <span class="small-text">Download on the</span>
+                            <span class="large-text">App Store</span>
+                        </div>
+                    </a>
+                    <a class="download-btn play" href="#">
+                        <img src="playstoreIcon.png" alt="Google Play Logo">
+                        <div class="btn-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="large-text">Google Play</span>
+                        </div>
+                    </a>
+                    <a class="download-btn amazon" href="https://www.amazon.com/gp/mas/dl/android?p=com.cookingutopia.foodgame.adventure">
+                        <img src="amazonIcon.png" alt="Amazon Logo">
+                        <div class="btn-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="large-text">Amazon Store</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="game-card">
+                <div class="game-content">
+                    <img src="fashion.png" alt="Fashion DressUp" class="game-icon">
+                    <h2 class="game-title">Fashion Makeover: Makeup Games</h2>
+                </div>
+                
+                <div class="download-buttons">
+                    <a class="download-btn play" href="#">
+                        <img src="playstoreIcon.png" alt="Google Play Logo">
+                        <div class="btn-text">
+                            <span class="small-text">GET IT ON</span>
+                            <span class="large-text">Google Play</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

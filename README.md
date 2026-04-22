@@ -1,1 +1,1 @@
-# AlphaGameStudio.github.io
+# AlphaGameStudio

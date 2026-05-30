@@ -14,6 +14,16 @@ vungle.com,64d65bc07c1dd00011cc7f71,DIRECT,c107d686becd2d77
 ironsrc.com, 617571, DIRECT 
 mintegral.com, 46543, DIRECT, 0aeed750c80d6423
 
+# OneTag
+onetag.com, 96e5c3849e637b8, DIRECT
+onetag.com, 96e5c3849e637b8-OB, DIRECT
+appnexus.com, 13099, RESELLER
+pubmatic.com, 161593, RESELLER, 5d62403b186f2ace
+rubiconproject.com, 11006, RESELLER, 0bfd66d529a55807
+video.unrulymedia.com, 586616193, RESELLER
+smartadserver.com, 4111, RESELLER
+
+
 33across.com,001Pg0000197KcKIAU,RESELLER,bbea06d9c4d2853c
 Contextweb.com,562852,RESELLER,89ff185a4c4e857c
 Media.net,8CU12AQ1Y,RESELLER
@@ -1237,7 +1247,7 @@ adnimation.com, 20250084, RESELLER
 pubnative.net, 1017792, RESELLER, d641df8625486a7b
 
 
-# CAS.ai Updated May 29, 2026
+Updated May 29, 2026
 OwnerDomain=cas.ai
 cas.ai, 922e6092, DIRECT
 #=== GoogleAds Apr 27, 2026

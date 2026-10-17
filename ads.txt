@@ -6293,3 +6293,81 @@ yieldmo.com, 3746143199094055132, RESELLER
 yieldmo.com, 2719019867620450718, RESELLER
 zetaglobal.net, 546, RESELLER
 zetaglobal.net, 891, RESELLER
+
+myfeature.tv, BgAiXAwdmOb1zjGYg9it, DIRECT
+myfeature.tv, HUJoGQ3atbkSzXeYvLUt, DIRECT
+inventorypartnerdomain=myfeature.tv
+rubiconproject.com, 26984, RESELLER, 0bfd66d529a55807
+video.unrulymedia.com, 1876793108340587286, RESELLER
+lijit.com, 491580, RESELLER, fafdf38b16bf6b2b
+media.net, 8CU8S2B45, RESELLER
+improvedigital.com, 2709, RESELLER
+adyoulike.com, 5b10e895bf138e0006ef1f9159af5cb4, RESELLER
+conversantmedia.com, 100906, RESELLER, 03113cd04947736d
+inmobi.com, cac51fe616224c3c8f858f34b3267dd7, RESELLER, 83e75a7ae333ca9d
+metup.it, AJxF6R176a9M6CaTvK, RESELLER
+smilewanted.com, 5914, RESELLER
+zetaglobal.net, 615, RESELLER
+bidlok.com, GFyoDu2G, DIRECT
+blasto.ai, 271, RESELLER, 7e936b1feafdaa61
+motorik.io, 100904, RESELLER
+
+#smartbid
+inventorypartnerdomain=smartbid.ai
+smartbid.ai, SMB40151, DIRECT, 98eb473904e71631
+improvedigital.com, 2513, RESELLER
+adagio.io, 1618, RESELLER
+benefit.media, 9900151, DIRECT
+nextmillennium.io, 16978, RESELLER
+lijit.com, 571745, RESELLER, fafdf38b16bf6b2b
+triplelift.com, 13011, RESELLER, 6c33edb13117fd86
+themediagrid.com, VM75KS, RESELLER, 9fac4a4a87c2a44f
+winvid.tv, 4900151, DIRECT, d277f3b454496716
+pubmatic.com, 164084, RESELLER, 5d62403b186f2ace
+triplelift.com, 12613, RESELLER, 6c33edb13117fd86
+pubmatic.com, 166268, RESELLER, 5d62403b186f2ace
+appnexus.com, 16546, RESELLER, f5ab79cb980f11d1
+freewheel.tv, 536081-r-523319, RESELLER, 74e8e47458f74754
+rubiconproject.com, 26094, RESELLER, 0bfd66d529a55807
+dxkulture.com, 4900151, DIRECT, 259726033fc4df0c
+pubmatic.com, 166396, RESELLER, 5d62403b186f2ace
+video.unrulymedia.com, 946176315, RESELLER, 98c21ef9a666c68b
+smartadserver.com, 5883, RESELLER, 060d053dcf45cbf3
+pwr-games.com, 4100151, DIRECT
+openx.com, 540844550, RESELLER, 6a698e2ec38604c6
+altentiv.com, 5900151, DIRECT
+video.unrulymedia.com, 1200765299, RESELLER, 98c21ef9a666c68b
+sharethrough.com, 4536, RESELLER, d53b998a7bd4ecd2
+smartadserver.com, 4536, RESELLER, 060d053dcf45cbf3
+adelement.com, 5900151, DIRECT
+triplelift.com, 14805, RESELLER, 6c33edb13117fd86
+jamx.ai, 4900151, DIRECT
+lijit.com, 556948, RESELLER, fafdf38b16bf6b2b
+appnexus.com, 11450, RESELLER, f5ab79cb980f11d1
+triplelift.com, 14768, RESELLER, 6c33edb13117fd86
+ubrikvideo.com, 5900151, DIRECT
+video.unrulymedia.com, 7267380105862376423, RESELLER, 98c21ef9a666c68b
+consumable.com, 2001454, RESELLER, aefcd3d2f45b5070
+rtbhouse.com, 1HFOytS8uOqkhz8av8V7, RESELLER, 4f3b94578e85950c
+rtbhouse.com, 7VQaL76PBynk7Hu4jror, RESELLER, 4f3b94578e85950c
+video.unrulymedia.com, 579227028, RESELLER, 98c21ef9a666c68b
+nativo.com, 6152, RESELLER, 59521ca7cc5e9fee
+onetag.com, 970b1a7bf195228, RESELLER
+freewheel.tv, 1608885-524565, RESELLER, 74e8e47458f74754
+freewheel.tv, 536081-r-524565, RESELLER, 74e8e47458f74754
+zetaglobal.net, 883, RESELLER
+adagio.io, 1683, RESELLER
+lijit.com, 564990, RESELLER, fafdf38b16bf6b2b
+smaato.com, 1100060557, RESELLER, 07bcf65f187117b4
+loopme.com, 15685, RESELLER, 6c8d5f95897a5a3b
+rubiconproject.com, 24202, RESELLER, 0bfd66d529a55807
+lijit.com, 582934, RESELLER, fafdf38b16bf6b2b
+trustx.org, 4900151, DIRECT
+xandr.com, 15606, RESELLER, f5ab79cb980f11d1
+lijit.com, 472844, RESELLER, fafdf38b16bf6b2b
+lijit.com, 481808, RESELLER, fafdf38b16bf6b2b
+smartadserver.com, 5276, RESELLER, 060d053dcf45cbf3
+loopme.com, 15664, RESELLER, 6c8d5f95897a5a3b
+pubmatic.com, 166836, RESELLER, 5d62403b186f2ace
+pubmatic.com, 167031, RESELLER, 5d62403b186f2ace
+pubmatic.com, 161858, RESELLER, 5d62403b186f2ace
